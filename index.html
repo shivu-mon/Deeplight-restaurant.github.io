@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    body {
+      padding: 0%;
+      margin: 0%;
+    }
+
+    .heading {
+      border-radius: 23px;
+
+    }
+
+    a {
+      font-weight: 600 !important;
+      font-size: large !important;
+    }
+
+    .login {
+      transition: all 500ms;
+    }
+
+    .login:hover {
+      background-color: rgb(82, 82, 82) !important;
+      transition: all 500ms ease-in-out;
+    }
+
+    .slide-img {
+
+      border-radius: 11px;
+    }
+
+
+    .into-img {
+      background-image: url("main.jpg");
+      height: 500px;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .blog-heading {
+      border-radius: 23px;
+    }
+
+
+
+    .about {
+      border-radius: 23px;
+
+    }
+
+
+
+    .about-text {
+      font-weight: 800;
+    }
+
+    .text-nav {
+      color: rgb(82, 82, 82);
+    }
+
+    .text-nav:hover {
+      color: red;
+    }
+
+
+
+    .contact {
+      height: auto;
+      width: 60%;
+    }
+
+    .order-btn:hover {
+      background-color: white !important;
+      color: black !important;
+    }
+
+    .card-front {
+      transition: all 0.3s;
+
+    }
+
+    .card-front:hover {
+      transform: scale(1.1);
+
+    }
+
+    .send-btn {
+      width: 100px;
+    }
+
+    .footery {
+      background-color: black;
+
+    }
+
+    .footery a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .footery p {
+      color: rgb(106, 106, 106);
+
+    }
+
+    .bi {
+      color: white;
+      font-size: 1.7em;
+
+    }
+
+
+    .fixed-img {
+      background-attachment: fixed;
+      background-image: url("fix-img.jpg");
+      height: 500px;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bi-instagram:hover {
+      color: rgb(190, 50, 101);
+    }
+
+    .bi-facebook:hover {
+      color: rgb(0, 183, 255);
+    }
+
+    .bi-youtube:hover {
+      color: red;
+    }
+
+    .bi-twitter:hover {
+      color: rgb(0, 183, 255);
+    }
+
+    .my-form {
+      padding: 2em;
+    }
+
+    .option-login {
+      padding-left: 25%;
+      padding-right: 25%;
+    }
+
+    button {
+      background-color: white;
+      border: 1px gray solid;
+      border-radius: 6px;
+    }
+
+    .number {
+      color: gray !important;
+      box-shadow: 0px 0px 0px 0.5px black !important;
+    }
+
+    .carousel-control-prev-icon {
+      height: 40px;
+      width: 40px;
+      background-image: url("left-arrow.png");
+    }
+
+    .carousel-control-next-icon {
+      height: 40px;
+      width: 40px;
+      background-image: url("right-arrow.png");
+
+    }
+
+    .review {
+      color: red;
+    }
+
+    .review:hover {
+      color: rgb(204, 0, 0);
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="danger">
+    <nav class="navbar navbar-expand-lg bg-white pt-4 pb-4 fixed-top  ">
+      <div class="container-fluid ">
+        <a class="navbar-brand " href="#"><img class="ps-3" src="logo.png" alt=""
+            style="height: 30px;width: 100px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center " id="navbarSupportedContent">
+          <ul class="navbar-nav  ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link text-nav " aria-current="page" href="#"><span style="color: red;">HOME</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-nav" aria-current="page" href="#about-us">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-nav" aria-current="page" href="#our-blogs">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-nav" aria-current="page" href="#our-gallery">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-nav" aria-current="page" href="#get-in-touch">CONTACT</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav   ms-auto ">
+            <li class="nav-item">
+              <!-- <button class="btn btn-outline-danger me-2 login " onclick="window.location.href='http://127.0.0.1:5500/login.html';" type="button">LOGIN</button> -->
+              <button class="login " data-bs-toggle="modal" data-bs-target="#exampleModal"
+                style="color: white; background-color: red;border-radius: 23px;height: 40px; width: 130px;font-size: large;border: red; font-weight:600;">
+                Login</button>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+  </div>
+  </nav>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+         
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h2 class="text-center" style="font-family: 'Roboto Mono', monospace; color:gray">Login</h2>
+          <form class="my-form ">
+            <div >
+              <input type="text" pattern="[6789]{1}[0-9]{9}" placeholder="phone" class="form-control number"
+                id="exampleInputEmail1" aria-describedby="emailHelp" maxlength="10" required>
+            </div>
+
+            <div class="container text-center mt-3">
+              <button type="submit" class="btn btn-danger option-login py-2 "  style="padding: 27%; padding-top: 0px;padding-bottom: 0px;">Get One Time Password</button>
+
+            </div>
+          </form>
+          <p class="text-center ">or</p>
+          <div class="text-center container ">
+            <button class="option-login py-2"><img src="mail.png" class="pe-1 pb-1" style="height: 20px;width:auto"
+                alt="">Continue with E-mail</button><br><br>
+            <button class="option-login py-2"><img src="google.png" class="pe-1 pb-1 " style="height: 20px;width:auto;"
+                alt="">Continue with Google</button>
+          </div>
+
+
+        </div>
+        <div class="text-center pb-5">
+          <p>New to Deeplight?<button class="btn btn-danger ms-3 " data-bs-toggle="modal" data-bs-target="#exampleModal-2"
+              data-bs-dismiss="modal" >Create account</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+<div class="modal fade " tabindex="-1" id="exampleModal-2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h2 class="text-center" style="font-family: 'Roboto Mono', monospace; color:gray">Sign up</h2>
+        <form class="my-form ">
+          <div class="mb-3 ">
+            <input type="text" placeholder="Full Name" class="form-control" id="exampleInputEmail1"
+              aria-describedby="emailHelp" required>
+          </div>
+          <div class="mb-3 ">
+            <input type="text" placeholder="Email" class="form-control" id="exampleInputEmail1"
+              aria-describedby="emailHelp" required>
+          </div>
+          <div class="form-check py-2">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              <div>
+                <p>I agree to Deeplight's Terms of Service, Privacy Policy and Content Policies</p>
+
+              </div>
+            </label>
+
+            <div class=" text-center ">
+              <button type="submit" class="btn btn-danger option-login py-2  " style="padding: 32%; padding-top: 0px;padding-bottom: 0px;">Create account</button>
+            </div>
+          </div>
+        </form>
+        <p class="text-center pt-2">or</p>
+        <div class="text-center container ">
+          <button class="option-login py-2"><img src="google.png" class="pe-1 pb-1 " style="height: 20px;width:auto;"
+              alt="">Continue with Google</button>
+        </div>
+     
+        <div class="text-center pt-4 ">
+          <p>Already have account? <button class="btn btn-danger ms-2 " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-dismiss="modal">Log in</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <div class="into-img">
+
+    <h1 style="color: white;padding-top: 15%;padding-left: 12%;font-family: 'Playfair Display', serif;">Welcome to
+      Deeplight </h1><br>
+    <p style="color: white;padding-left: 18%;font-family: 'Source Code Pro', monospace;">GOOD FOOD | FEEL GOOD</p>
+  </div>
+
+
+
+  <br>
+  <br>
+  <h2 class="about text-danger text-center " id="about-us">ABOUT US</h2>
+  <br><br>
+
+  <div class="card mb-3" style="max-width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="shope.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.Some quick example text to build on the card title and make up
+            the bulk of the card's content.The seeds of the Coffea plant's fruits are separated to produce unroasted
+            green coffee beans. The beans are roasted and then ground into fine particles typically steeped in hot water
+            before being filtered out, producing a cup of coffee. It is usually served hot, although chilled or iced
+            coffee is common. Coffee can be prepared and presented in a variety of ways (e.g., espresso, French press,
+            caffè latte, or already-brewed canned coffee). Sugar, sugar substitutes, milk, and cream are often added to
+            mask the bitter taste or enhance the flavor.
+            Though coffee is now a global commodity, it has a long history tied closely to food traditions around the
+            Red Sea. The earliest credible evidence of coffee drinking as the modern beverage appears in modern-day
+            Yemen in southern Arabia in the middle of the 15th century in Sufi shrines, where coffee seeds were first
+            roasted and brewed in a manner similar to how it is now prepared for drinking.[2] The coffee beans were
+            procured by the Yemenis from the Ethiopian Highlands via coastal Somali intermediaries, and cultivated in
+            Yemen. By the 16th century, the drink had reached the rest of the Middle East and North Africa, later
+            spreading to Europe.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="fixed-img">
+    <h2 class="text-center " style="font-family: 'Dancing Script', cursive;color: white;padding-top: 15%;">"Tell me what
+      you eat, and I will tell you what you are."</h2>
+    <h2 class="text-center " style="font-family: 'Dancing Script', cursive;color: white;padding-left: 45%;">- Jean
+      Anthelme Brillat-Savarin</h2>
+  </div>
+
+
+  <br> <br>
+  <h2 class="blog-heading text-center text-danger p-1" id="our-blogs">OUR BLOGS</h2>
+  <br><br>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card" style="border: 0px ;">
+          <img src="blog-1.jpg" class="card-img-top blog-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">PREP TECHNIQUES COFFEE</h5>
+            <p class="card-text">Distracted by the readable content of a page when looking at its layout. The point of
+              using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its
+              layout. The point of using Lorem Ipsum is that it has a more</p>
+            <div class="text-center"> <a href="#" class="btn btn-danger">READ MORE</a> </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="border: 0px;">
+          <img src="blog-2.jpg" class="card-img-top blog-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">PREP TECHNIQUES COFFEE</h5>
+            <p class="card-text">Distracted by the readable content of a page when looking at its layout. The point of
+              using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its
+              layout. The point of using Lorem Ipsum is that it has a more</p>
+            <div class="text-center"> <a href="#" class="btn btn-danger">READ MORE</a> </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+  <div class="text-center  " style="background-color: rgb(191, 191, 191);box-shadow: 0px 0px 4px;"><br><br>
+    <p style="font-size: 3em;font-family: 'Shadows Into Light', cursive;color: white  ;">You wanna see how <span
+        style="color: red">lucky</span> you are <span style="color: red">?</span></p>
+    <p class="d-inline-flex gap-1">
+      <a class="btn btn-danger " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+        aria-controls="collapseExample">
+        Click Me
+      </a>
+
+    </p><br><br>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        <p style="font-size: 25px;">You got <span style="color: red;">20%</span> OFF on your first <span
+            style="color: red;">10</span> Orders</p>
+        <p style="font-size: 25px;">You got <span style="color: red;">10%</span> OFF on your first <span
+            style="color: red;">3</span> Reservation</p>
+        <div><button type="button" class="btn btn-danger">Claim Reward Now</button></div>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+  <div class="fixed-img" style="background-image: url('fix-img-order.jpg');">
+    <h2 class="text-center " style="font-family: 'Dancing Script', cursive;color: white;padding-top: 15%;">"The only
+      thing I like better than talking about Food is eating."</h2>
+    <div class="text-center">
+      <button class="mt-4 order-btn"
+        style="background-color: red;height: 40px;width: 130px;border-radius: 23px;color: white;border:red;font-weight: 600;">Order
+        Now</button>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <div class="container-fluid ">
+    <div class="row  ">
+      <h2 class="text-center "
+        style="font-family: 'Dancing Script', cursive; font-weight: 600;font-size:3em;color: red;">Happy Customers</h2>
+      <div class="col-lg-4 col-md-6  py-4 text-center ">
+
+        <div class="card card-front m-auto   " style="width: 18rem;background-color: rgb(233, 233, 233);">
+          <img src="person-1.jpg" class="card-img-top" alt="..."
+            style="border-radius: 100%; padding: 40px; padding-bottom: 0px;">
+          <div class="card-body">
+            <h5 class="card-title">Anjana mohan</h5>
+            <p class="card-text" style="font-family: 'Shadows Into Light', cursive;" !important>"Some quick example text
+              to build on the card title and make up the bulk."</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6  py-4 text-center px-4">
+        <div class="card card-front m-auto  " style="width: 18rem;background-color:  rgb(233, 233, 233);">
+          <img src="person-2.jpg" class="card-img-top" alt="..."
+            style="border-radius: 100%; padding: 40px; padding-bottom: 0px;">
+          <div class="card-body">
+            <h5 class="card-title">Niranana </h5>
+            <p class="card-text" style="font-family: 'Shadows Into Light', cursive;" !important>"Aliquip habitant ea
+              suscipit ea varius cras habitasse ligula doloremque."</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 py-4 text-center ">
+        <div class="card card-front m-auto  " style="width: 18rem;background-color:  rgb(233, 233, 233);">
+          <img src="person-3.jpg" class="card-img-top" alt="..."
+            style="border-radius: 100%; padding: 40px; padding-bottom: 0px;">
+          <div class="card-body">
+            <h5 class="card-title">Arya chandran</h5>
+            <p class="card-text" style="font-family: 'Shadows Into Light', cursive;" !important>"Congue, gravida.
+              Placeat nibh sunt semper elementum anim! Integer lectus."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center"><p style="font-size:1.5em;font-weight: bolder; font-family: 'Caveat', cursive;">check out our reviews</p>
+      <i class="bi px-3 review bi-facebook"></i><i class="bi px-3 review bi-twitter"></i><i
+        class="bi px-3 review bi-youtube"></i>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-lg-12 ">
+      <h2 class="text-center pb-4 " style="color: red;" id="our-gallery">OUR GALLERY</h2>
+      <div class="section-slide">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" style="padding: 9%;padding-top: 0px; padding-bottom: 0px;">
+            <div class="carousel-item active " style=" " data-bs-interval="10000">
+              <img src="Restaurant-2.jpg" class="d-block w-100 slide-img" alt="...">
+            </div>
+            <div class="carousel-item  " data-bs-interval="2000">
+              <img src="Restaurant-1.jpg" class="d-block w-100 slide-img" alt="...">
+            </div>
+            <div class="carousel-item  " data-bs-interval="2000">
+              <img src="Restaurant-3.jpg" class="d-block w-100 slide-img" alt="...">
+            </div>
+            <div class="carousel-item  " data-bs-interval="2000">
+              <img src="Restaurant-4.jpg" class="d-block w-100 slide-img" alt="...">
+            </div>
+            <div class="carousel-item  ">
+              <img src="Restaurant-5.jpg" class="d-block w-100 slide-img" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <br> <br>
+  <h2 class="contact-heading text-danger text-center" id="get-in-touch">GET IN TOUCH</h2>
+  <br>
+  <div class="contact container ">
+    <div class="row">
+      <form class="row ">
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Your Name" aria-label="First name" required><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input type="email" class="form-control" placeholder="Your E-mail" aria-label="email" required><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Your Phone" aria-label="password" maxlength="10"
+              required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Leave a massage" rows="3"
+              required></textarea>
+          </div>
+        </div>
+        <div class="text-center"><button type="submit" class="btn btn-danger send-btn ">SEND</button></div>
+
+      </form>
+    </div>
+  </div>
+  <br> <br>
+  <br>
+  <!-- <div class="container">
+    <iframe class="responsive-iframe" src="http://127.0.0.1:5500/login.html" frameborder="0"></iframe>
+  </div> -->
+
+
+
+
+  <div class="footery">
+    <div class="container">
+
+      <div class="row">
+        <div class="col">
+          <p class="pt-5">About us</p><br>
+          <p>
+            <a href="">Our Company</a>
+          </p>
+          <p>
+            <a href="">Media Center</a>
+          </p>
+          <p>
+            <a href="">History</a>
+          </p>
+          <p>
+            <a href="">Careers</a>
+          </p>
+          <p>
+            <a href="">Leadership</a>
+          </p>
+
+        </div>
+        <div class="col">
+          <p class="pt-5">Links</p>
+          <br>
+          <p>
+            <a href="">Home</a>
+          </p>
+          <p>
+            <a href="">About</a>
+          </p>
+          <p>
+            <a href="">Cofees</a>
+          </p>
+          <p>
+            <a href="">Blog</a>
+          </p>
+          <p>
+            <a href="">Contact</a>
+          </p>
+        </div>
+
+
+        <div class="col mt-5 d-flex justify-content-end">
+          <div><i class="bi bi-instagram px-3" style=" "></i></div>
+          <div><i class="bi bi-facebook px-3"></i></div>
+          <div><i class="bi bi-youtube px-3"></i></div>
+          <div><i class="bi bi-twitter ps-3  "></i></div>
+        </div>
+      </div>
+      <hr style="color: white;">
+      <p class="d-flex justify-content-end pb-3 " style="color: white;">© 2022 The Coca‑Cola Company. All rights
+        reserved.</p>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
